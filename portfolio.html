@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .texto1{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            justify-items: center;
+            margin-top: 220px;
+        }
+        .text_red{
+            color: #A93F3F;
+        }
+        h1{
+            font-size: 48px;
+        }
+        h2{
+            font-size: 36px;
+            margin-top: -35px;
+        }
+        .bloco {
+            position: relative; /* Container de referência para o posicionamento absoluto */
+            display: inline-block; /* Mantém o bloco do tamanho da imagem */
+            justify-items: center;
+            transition: transform 0.3s ease;
+        }
+        .bloco span {
+            position: absolute;
+            bottom: 10; /* Alinha na base da imagem */
+            left: 0;
+            top: 65%;
+            width: 100%;
+            padding: 10px;
+            color: white;
+            font-weight: 400;
+            text-align: center;
+            box-sizing: border-box;
+            z-index: 2; /* Garante que fique acima da imagem */
+        }
+        .bloco button {
+            position: absolute;
+            bottom: 10; /* Alinha na base da imagem */
+            left: 0;
+            top: 85%;
+            margin-left: 170px;
+            font-weight: 100;
+            justify-items: center;
+            box-sizing: border-box;
+            z-index: 2; /* Garante que fique acima da imagem */
+        }
+        .bloco span:hover{  
+            color: white; 
+        }
+        .bloco :hover{  
+            color: white; 
+        }
+
+        .sites {
+            display: block; /* Remove espaços indesejados abaixo da imagem */
+            position: relative;
+            z-index: 1;
+        }
+        button{
+            background-color: #A93F3F;
+            font-weight: 400;
+            border-radius: 8px;
+            border-style: none;
+            padding: 5px 15px;
+        }
+        img{
+            transition: transform 0.3s ease;
+        }
+        img:hover{
+            transform: translateY(-15px);
+        }
+    </style>
+    
+
+</head>
+<body>
+    <script>
+    //eu aprendi a criar sites em php então tive que adaptar com esse script para simular o include para o header//
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('files/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-placeholder').innerHTML = data;
+                });
+        });
+    </script>
+
+    <div id="header-placeholder">        
+    </div>
+        <div class="texto1" id="texto1">
+          <img src="files/imgs/site_cage.png" class="sites" id="site_01">
+
+          <div class="bloco" id="bloco_cage">
+            <img src="files/imgs/site_cage.png" class="sites" id="site_cage">
+            <span>CAGE-loja de camisetas online com protótipo<br>de aplicativo de personalização da camiseta. </span>
+            <button>Visitar</button>
+          </div>
+
+          <img src="files/imgs/site_cage.png" class="sites" id="site_03">  
+        </div>    
+
+<img src="files/imgs/background.png" id="background_img" class="background_img">
+    
+</body>
+</html>

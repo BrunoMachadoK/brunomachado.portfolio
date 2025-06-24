@@ -1,0 +1,146 @@
+body{
+    background-color: rgb(29, 27, 27); 
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    color: white;
+}
+/* header */
+.logo{
+    position: absolute;
+    left: 13.44%;
+    right: 81.77%;
+    top: 1.94%;
+    bottom: 90.93%;
+    width: 92px;
+    height: 77px;
+}
+.navbar {
+    overflow: hidden;
+    justify-items: center;
+}        
+.navbar a {   
+    font-size: 16px;
+}        
+.menu { 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.menu_img{
+    width: 50px;
+    height: 34px;
+}
+.menu .menubtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0;
+}        
+.navbar a:hover, .menu:hover .menubtn {
+    background-color: #A93F3F;
+}
+.menu-content {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    display: none;
+    justify-items: center;
+    position: absolute;
+    min-width: 60px;
+    margin-top: 65px;
+    z-index: 1;
+}            
+.menu-content a {
+    float: none;
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;            
+}
+.menu-content a:hover {
+    background-color: #272626;
+}           
+.menu:hover .menu-content {
+    display: block;
+}
+/* index */
+
+.background_img{
+    position: absolute;
+    width: 100%;
+    height: 422px;
+    left: 0px;
+    top: 658px;
+    object-fit: cover;
+}
+
+.profile_img{
+    position: absolute;
+    left: 63.33%;
+    right: 13.23%;
+    top: 18.06%;
+    bottom: 45.83%;
+    width: 450px;
+    height: 390px;
+    box-shadow: #272626;
+}
+.opcoes {
+    margin-left: 250px;
+    margin-top: 350px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas de tamanho igual */
+    grid-template-rows: repeat(2, 1fr);    /* 2 linhas de tamanho igual */
+    gap: 20px;                            /* Espaço entre os itens */
+    width: fit-content;                   /* Ajusta ao conteúdo */
+}
+
+.sobre-mim,.formacao, .portfolio {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Opcional: borda sutil */
+    border-radius: 8px;                         /* Opcional: cantos arredondados */
+    transition: transform 0.3s ease;            /* Efeito hover opcional */
+}
+.contato {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Opcional: borda sutil */
+    border-radius: 8px;                         /* Opcional: cantos arredondados */
+    transition: transform 0.3s ease;            /* Efeito hover opcional */
+}
+.op-icon {
+    stroke: white;
+    pointer-events: none;
+}
+.sobre-mim:hover .op-icon,.formacao:hover .op-icon,.contato:hover .op-icon, .portfolio:hover .op-icon {
+    stroke: #A93F3F;
+}
+.sobre-mim:hover, .contato:hover, .formacao:hover, .portfolio:hover {
+    transform: translateY(-5px);                /* Efeito hover opcional */
+    background: rgba(255, 255, 255, 0.05);     /* Efeito hover opcional */
+    color: #A93F3F;   
+}
+

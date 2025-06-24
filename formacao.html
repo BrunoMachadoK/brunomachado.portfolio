@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .texto1{
+            position: absolute;
+            width: 427px;
+            height: 149px;
+            left: 258px;
+            top: 15%;
+        }
+        .text_red{
+            color: #A93F3F;
+        }
+        h1{
+            font-size: 38px;
+        }
+        .line1{
+            position: absolute;
+            width: 375.01px;
+            height: 0px;
+            top: 45%;   
+        }
+        .h2 span svg.line2 {
+            top: -23px;
+        }
+        h2{
+            font-size: 26px;
+            display: flex;
+            align-items: center;   
+        }
+        .f1{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 18px;
+            font-weight: 400;
+        }
+    </style>
+
+    
+</head>
+<body>
+    <script>
+    //eu aprendi a criar sites em php então tive que adaptar com esse script para simular o include para o header//
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('files/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-placeholder').innerHTML = data;
+                });
+        });
+    </script>
+
+    <div id="header-placeholder"></div>
+        <div class="texto1" id="texto1">
+        <h1>Formação Educacional</h1>
+        <div class="line1" >
+                    <svg width="375" height="4" viewBox="0 0 375 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="0.00274721" y1="0.500008" x2="375.002" y2="2.56045" stroke="#A93F3F"/>
+</svg>
+        </div>
+        <h2>Ensino <span><svg width="305" height="1" viewBox="0 0 305 1" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block;" >
+<line x1="5" y1="0.5" x2="305" y2="0.5" stroke="#A93F3F"/>
+</svg>
+</span></h2>
+        <span class="f1" >
+            <svg width="23" height="23" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.33333 2.33334L19.25 6.41668L21 15.1667L15.1667 21L6.41666 19.25L2.33333 2.33334ZM2.33333 2.33334L11.1837 11.1837M14 22.1667L22.1667 14L25.6667 17.5L17.5 25.6667L14 22.1667ZM15.1667 12.8333C15.1667 14.122 14.122 15.1667 12.8333 15.1667C11.5447 15.1667 10.5 14.122 10.5 12.8333C10.5 11.5447 11.5447 10.5 12.8333 10.5C14.122 10.5 15.1667 11.5447 15.1667 12.8333Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+Rede de computadores-UFSM (1° período)</span>
+<br>
+        <span class="f1" >
+            <svg width="23" height="23" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.33333 2.33334L19.25 6.41668L21 15.1667L15.1667 21L6.41666 19.25L2.33333 2.33334ZM2.33333 2.33334L11.1837 11.1837M14 22.1667L22.1667 14L25.6667 17.5L17.5 25.6667L14 22.1667ZM15.1667 12.8333C15.1667 14.122 14.122 15.1667 12.8333 15.1667C11.5447 15.1667 10.5 14.122 10.5 12.8333C10.5 11.5447 11.5447 10.5 12.8333 10.5C14.122 10.5 15.1667 11.5447 15.1667 12.8333Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+ADS/EAD-Uninter (cursando)</span>            
+
+        <h2>Idiomas <span><svg width="292" height="1" viewBox="0 0 292 1" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block;" >
+<line x1="5" y1="0.5" x2="292" y2="0.5" stroke="#A93F3F"/>
+</svg>
+</span></h2>
+        <span class="f1" >
+            <svg width="23" height="23" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.66667 17.5C4.66667 17.5 5.83334 16.3333 9.33334 16.3333C12.8333 16.3333 15.1667 18.6667 18.6667 18.6667C22.1667 18.6667 23.3333 17.5 23.3333 17.5V3.50001C23.3333 3.50001 22.1667 4.66668 18.6667 4.66668C15.1667 4.66668 12.8333 2.33334 9.33334 2.33334C5.83334 2.33334 4.66667 3.50001 4.66667 3.50001V17.5ZM4.66667 17.5V25.6667" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+Português (nativo)</span>
+<br>
+        <span class="f1" >
+            <svg width="23" height="23" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.66667 17.5C4.66667 17.5 5.83334 16.3333 9.33334 16.3333C12.8333 16.3333 15.1667 18.6667 18.6667 18.6667C22.1667 18.6667 23.3333 17.5 23.3333 17.5V3.50001C23.3333 3.50001 22.1667 4.66668 18.6667 4.66668C15.1667 4.66668 12.8333 2.33334 9.33334 2.33334C5.83334 2.33334 4.66667 3.50001 4.66667 3.50001V17.5ZM4.66667 17.5V25.6667" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+Inglês (nivél médio)</span>
+        
+    </div>
+    <img src="files/imgs/background.png" id="background_img" class="background_img">
+
+</body>
+</html>

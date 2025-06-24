@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .texto1{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 427px;
+            height: 149px;
+            left: 40%;
+            top: 35%;
+        }
+        h1{
+            font-size: 32px;
+            margin-bottom: 50px;
+        }
+        .email{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 350px;
+        }
+        .mensagem{
+            display: flex;
+            flex-direction: column;
+            margin-top: 15px;    
+            max-width: 350px;
+            gap: 10px;            
+        }
+        .msg{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #sendbtn{
+            margin-top: 20px;
+        }
+    </style>
+    
+
+</head>
+<body>
+    <script>
+    //eu aprendi a criar sites em php então tive que adaptar com esse script para simular o include para o header//
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('files/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-placeholder').innerHTML = data;
+                });
+        });
+    </script>
+
+    <div id="header-placeholder"></div>
+
+        <div class="texto1" id="texto1">
+            <h1>Deixe sua mensagem!</h1>
+            <form class="msg">
+                <label class="email" >email<input type="email"></label>        
+                <label class="mensagem">Mensagem<textarea rows="5" ></textarea></label>
+                <button id="sendbtn" type="submit">Enviar</button>
+            </form>    
+        </div>  
+    <img src="files/imgs/background.png" id="background_img" class="background_img">
+
+    
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .texto1{
+            position: absolute;
+            width: 427px;
+            height: 149px;
+            left: 258px;
+            top: 195px;
+        }
+        .text_red{
+            color: #A93F3F;
+        }
+        h1{
+            font-size: 48px;
+        }
+        h2{
+            font-size: 36px;
+            margin-top: -35px;
+        }
+    </style>
+    
+
+</head>
+<body>
+    <script>
+    //eu aprendi a criar sites em php então tive que adaptar com esse script para simular o include para o header//
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('files/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-placeholder').innerHTML = data;
+                });
+        });
+    </script>
+
+    <div id="header-placeholder"></div>
+        <div class="texto1" id="texto1">
+        <h1>Oi eu sou o <span class="text_red">Bruno</span>!</h1>
+        <h2>Designer &</h2>
+        <h2>estudante de <span class="text_red">ADS</span></h2>
+    </div>
+    <img src="files/imgs/profile_img.png" id="profile_img" class="profile_img">   
+    <img src="files/imgs/background.png" id="background_img" class="background_img">
+    <div class="opcoes" id="opcoes">
+        <div class="sobre-mim" onclick="window.location.href='sobre.html'">
+                  <svg class="op-icon" width="54" height="60" viewBox="0 0 54 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M52 58V51.7778C52 48.4773 50.683 45.312 48.3388 42.9782C45.9946 40.6444 42.8152 39.3333 39.5 39.3333H14.5C11.1848 39.3333 8.00537 40.6444 5.66116 42.9782C3.31696 45.312 2 48.4773 2 51.7778V58M39.5 14.4444C39.5 21.3173 33.9036 26.8889 27 26.8889C20.0964 26.8889 14.5 21.3173 14.5 14.4444C14.5 7.57157 20.0964 2 27 2C33.9036 2 39.5 7.57157 39.5 14.4444Z"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>  
+        <span>Sobre mim</span>    
+        </div>    
+        <div class="contato" onclick="window.location.href='contato.html'" >
+            <svg class="op-icon" width="54" height="44" viewBox="0 0 54 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M52 7C52 4.25 49.75 2 47 2H7C4.25 2 2 4.25 2 7M52 7V37C52 39.75 49.75 42 47 42H7C4.25 42 2 39.75 2 37V7M52 7L27 24.5L2 7"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+        <span>Contato</span>    
+        </div>
+        <div class="formacao" onclick="window.location.href='formacao.html'" >
+            <svg class="op-icon" width="54" height="51" viewBox="0 0 54 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M27 49H52M39.5 3.7056C40.6051 2.61352 42.1039 2 43.6667 2C44.4405 2 45.2067 2.15062 45.9216 2.44327C46.6366 2.73592 47.2862 3.16486 47.8333 3.7056C48.3805 4.24634 48.8145 4.88829 49.1107 5.5948C49.4068 6.30131 49.5592 7.05855 49.5592 7.82327C49.5592 8.58799 49.4068 9.34523 49.1107 10.0517C48.8145 10.7582 48.3805 11.4002 47.8333 11.9409L13.1111 46.2549L2 49L4.77778 38.0195L39.5 3.7056Z"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+        <span>Formação Educacional</span>
+        </div>
+        <div class="portfolio" onclick="window.location.href='portfolio.html'" >
+            <svg class="op-icon" width="54" height="49" viewBox="0 0 54 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M52 42C52 43.3261 51.4732 44.5979 50.5355 45.5355C49.5979 46.4732 48.3261 47 47 47H7C5.67392 47 4.40215 46.4732 3.46447 45.5355C2.52678 44.5979 2 43.3261 2 42V7C2 5.67392 2.52678 4.40215 3.46447 3.46447C4.40215 2.52678 5.67392 2 7 2H19.5L24.5 9.5H47C48.3261 9.5 49.5979 10.0268 50.5355 10.9645C51.4732 11.9021 52 13.1739 52 14.5V42Z"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+        <span>Porfólio</span>
+        </div>
+    </div>
+    
+</body>
+</html>
