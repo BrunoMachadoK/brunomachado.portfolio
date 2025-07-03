@@ -143,4 +143,55 @@ body{
     background: rgba(255, 255, 255, 0.05);     /* Efeito hover opcional */
     color: #A93F3F;   
 }
+@media(max-width: 450px){
+    .logo{
+    position: absolute;
+    left: 13.44%;
+    right: 81.77%;
+    top: 1.94%;
+    bottom: 90.93%;
+    width: 52px;
+    height: 37px;
+}
+    .profile_img{
+    position: absolute;
+    left: 63.33%;
+    right: 13.23%;
+    top: 18.06%;
+    bottom: 45.83%;
+    width: 0px;
+    height: 0px;
+    box-shadow: #272626;
+}
+    .navbar {
+    overflow: hidden;
+    justify-items: center;
+    z-index: 100;
+}  
+   .opcoes {
+    margin-left: 0px;
+    margin-top: 450px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas de tamanho igual */
+    grid-template-rows: repeat(2, 1fr);    /* 2 linhas de tamanho igual */
+    gap: 10px;                            /* Espaço entre os itens */
+    width: fit-content;                   /* Ajusta ao conteúdo */
+}
+    .background_img{
+    position: absolute;
+    height: 0px;
+    left: 0px;
+    top: 700px;
+    margin-bottom: 0px;
+    object-fit: cover;
+}  
+    .logo{
+    position: absolute;
+    top: 1.94%;
+    bottom: 90.93%;
+    width: 72px;
+    height: 57px;
+    margin-left: -35px;    
+    }
+}
 
