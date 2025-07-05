@@ -95,10 +95,10 @@ body{
     margin-left: 250px;
     margin-top: 350px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 colunas de tamanho igual */
-    grid-template-rows: repeat(2, 1fr);    /* 2 linhas de tamanho igual */
-    gap: 20px;                            /* Espaço entre os itens */
-    width: fit-content;                   /* Ajusta ao conteúdo */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);    
+    gap: 20px;                            
+    width: fit-content;                  
 }
 
 .sobre-mim,.formacao, .portfolio {
@@ -112,9 +112,9 @@ body{
     align-items: center;
     gap: 10px;
     padding: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Opcional: borda sutil */
-    border-radius: 8px;                         /* Opcional: cantos arredondados */
-    transition: transform 0.3s ease;            /* Efeito hover opcional */
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 8px;                         
+    transition: transform 0.3s ease;            
 }
 .contato {
     font-family: "Roboto Condensed", sans-serif;
@@ -127,9 +127,9 @@ body{
     align-items: center;
     gap: 20px;
     padding: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Opcional: borda sutil */
-    border-radius: 8px;                         /* Opcional: cantos arredondados */
-    transition: transform 0.3s ease;            /* Efeito hover opcional */
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 8px;                         
+    transition: transform 0.3s ease;            
 }
 .op-icon {
     stroke: white;
@@ -139,8 +139,8 @@ body{
     stroke: #A93F3F;
 }
 .sobre-mim:hover, .contato:hover, .formacao:hover, .portfolio:hover {
-    transform: translateY(-5px);                /* Efeito hover opcional */
-    background: rgba(255, 255, 255, 0.05);     /* Efeito hover opcional */
+    transform: translateY(-5px);               
+    background: rgba(255, 255, 255, 0.05);    
     color: #A93F3F;   
 }
 @media(max-width: 450px){
@@ -172,10 +172,10 @@ body{
     margin-left: 0px;
     margin-top: 450px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 colunas de tamanho igual */
-    grid-template-rows: repeat(2, 1fr);    /* 2 linhas de tamanho igual */
-    gap: 10px;                            /* Espaço entre os itens */
-    width: fit-content;                   /* Ajusta ao conteúdo */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);    
+    gap: 10px;                            
+    width: fit-content;                  
 }
     .background_img{
     position: absolute;
